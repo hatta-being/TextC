@@ -1,23 +1,22 @@
 ﻿namespace Practice1_1_1 {
-    class Product {
-
+    public class Product {
         //商品コード
-        public int Code { get; private set; }
+        public int vCode { get; private set; }
         //商品名
-        public string Name { get; private set; }
+        public string vName { get; private set; }
         //商品価格（税抜き）
-        public int Price { get; set; }
+        public int vPrice { get; set; }
 
         //コンストラクタ
-        public Product(int code, string name, int price) {
-            this.Code = code;
-            this.Name = name;
-            this.Price = price;
+        public Product(int vCode, string vName, int vPrice) {
+            this.vCode = vCode;
+            this.vName = vName;
+            this.vPrice = vPrice;
         }
 
         //消費税を決める（消費税率は8％）
         public int GetTax() {
-            return (int)(Price * 0.08);
+            return (int)(vPrice * 0.08);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Practice1_1_2 {
+﻿namespace dorayaki {
     public class Product {
         //商品コード
         public int vCode { get; private set; }
@@ -20,4 +20,3 @@
         }
     }
 }
-
