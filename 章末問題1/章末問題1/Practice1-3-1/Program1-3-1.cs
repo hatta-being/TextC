@@ -17,21 +17,14 @@ namespace Practice1_3_1 {
 
     static class Program {
         static void Main(string[] args) {
-            Student wstudent = new Student {
+            Student wStudent = new Student {
                 Name = "山田太郎",
                 Birthday = new DateTime(2013, 4, 5),
                 ShoolName = "神戸小学校",
                 Grade = 3,
                 ClassNumber = 3,
             };
-            Console.WriteLine("{0}({1})は、{2}の{3}年{4}組に所属しています。",
-         wstudent.Name, wstudent.GetAge(), wstudent.ShoolName, wstudent.Grade, wstudent.ClassNumber);
-
+            Console.WriteLine($"{wStudent.Name}({wStudent.GetAge()})は、{wStudent.ShoolName}の{wStudent.Grade}年{wStudent.ClassNumber}組に所属しています。");
         }
-
     }
 }
-
-
-
-

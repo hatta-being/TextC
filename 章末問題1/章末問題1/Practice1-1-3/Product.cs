@@ -1,22 +1,30 @@
-﻿namespace dorayaki {
+﻿using System;
+namespace Dorayaki {
     public class Product {
-        //商品コード
-        public int vCode { get; private set; }
-        //商品名
-        public string vName { get; private set; }
-        //商品価格（税抜き）
-        public int vPrice { get; set; }
+        /// <summary>
+        /// 商品コード
+        /// </summary>
+        public int Code { get; private set; }
+        /// <summary>
+        /// 商品名
+        /// </summary>
+        public string Name { get; private set; }
+        /// <summary>
+        /// 商品価格（税抜き）
+        /// </summary>
+        public int Price { get; set; }
 
         //コンストラクタ
-        public Product(int vCode, string vName, int vPrice) {
-            this.vCode = vCode;
-            this.vName = vName;
-            this.vPrice = vPrice;
+        public Product(int Code, string Name, int Price) {
+            this.Code = Code;
+            this.Name = Name;
+            this.Price = Price;
         }
 
-        //消費税を決める（消費税率は8％）
+        //消費税を決める。なおかつ少数になった場合は切り捨てる（消費税率は8％）
         public int GetTax() {
-            return (int)(vPrice * 0.08);
+            double taxAmount = Price * 0.08;
+            return (int)Math.Floor(taxAmount);
         }
     }
 }

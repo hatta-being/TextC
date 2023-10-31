@@ -9,30 +9,30 @@ namespace Practice1_2_3 {
     class Program {
         static void Main(string[] args) {
 
-            MyClass wmyClass = new MyClass { X = 1, Y = 2 };
-            MyStruct wmyStruct = new MyStruct { X = 1, Y = 2 };
+            MyClass wMyClass = new MyClass { X = 1, Y = 2 };
+            MyStruct wMyStruct = new MyStruct { X = 1, Y = 2 };
 
             // PrintObjectsメソッドを呼び出してオブジェクトの内容を表示
-            PrintObjects(wmyClass, wmyStruct);
-            PrintObjects2(wmyClass, wmyStruct);
-            PrintObjects(wmyClass, wmyStruct);
-
+            PrintObjects(wMyClass, wMyStruct);
+            PrintObjects2(wMyClass, wMyStruct);
+            PrintObjects(wMyClass, wMyStruct);
         }
 
         // MyClassとMyStructの内容を表示するPrintObjectsメソッドを定義
-        static void PrintObjects(MyClass wmyClass, MyStruct wmyStruct) {
-            Console.WriteLine("MyClass: X = " + wmyClass.X + ", Y = " + wmyClass.Y);
-            Console.WriteLine("MyStruct: X = " + wmyStruct.X + ", Y = " + wmyStruct.Y);
+        static void PrintObjects(MyClass wMyClass, MyStruct wMyStruct) {
+            Console.WriteLine("MyClass: X = " + wMyClass.X + ", Y = " + wMyClass.Y);
+            Console.WriteLine("MyStruct: X = " + wMyStruct.X + ", Y = " + wMyStruct.Y);
         }
         // MyClassとMyStructの2倍に変更するコード
-        static void PrintObjects2(MyClass wmyClass, MyStruct wmyStruct) {
-            wmyClass.X = wmyClass.X * 2;
-            wmyClass.Y = wmyClass.Y * 2;
-            wmyStruct.X = wmyStruct.X * 2;
-            wmyStruct.Y = wmyStruct.Y * 2;
+        static void PrintObjects2(MyClass wMyClass, MyStruct wMyStruct) {
+            wMyClass.X = wMyClass.X * 2;
+            wMyClass.Y = wMyClass.Y * 2;
+            wMyStruct.X = wMyStruct.X * 2;
+            wMyStruct.Y = wMyStruct.Y * 2;
         }
     }
 }
+
         /*
         問題1.2
         4.上記のコードを実行し、結果を確認してください。そして、どうしてそのような結果になったのか、理由を説明してください。

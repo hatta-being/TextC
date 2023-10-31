@@ -8,12 +8,9 @@ namespace Practice1_1_2 {
 
     class Program {
         static void Main(string[] args) {
-
-            Product wdorayaki = new Product(98, "どら焼き", 210);
-            int wtaxAmount = wdorayaki.GetTax();
-
-            Console.WriteLine("どら焼きの消費税は" + wtaxAmount + "円");
+            Product wDorayaki = new Product(98, "どら焼き", 210);
+            int wTaxAmount = wDorayaki.GetTax();
+            Console.WriteLine("どら焼きの消費税は" + wTaxAmount + "円");
         }
     }
 }
-

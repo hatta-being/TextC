@@ -16,22 +16,16 @@ namespace Practice1_2_1 {
     class Program {
         static void Main(string[] args) {
 
-            MyClass wmyClass = new MyClass { X = 1, Y = 2 };
-            MyStruct wmyStruct = new MyStruct { X = 1, Y = 2 };
+            MyClass wMyClass = new MyClass { X = 1, Y = 2 };
+            MyStruct wMyStruct = new MyStruct { X = 1, Y = 2 };
 
             // PrintObjectsメソッドを呼び出してオブジェクトの内容を表示
-            PrintObjects(wmyClass, wmyStruct);
+            PrintObjects(wMyClass, wMyStruct);
         }
-
         // MyClassとMyStructの内容を表示するPrintObjectsメソッドを定義
-        static void PrintObjects(MyClass wmyClass, MyStruct wmyStruct) {
-            Console.WriteLine("MyClass: X = " + wmyClass.X + ", Y = " + wmyClass.Y);
-            Console.WriteLine("MyStruct: X = " + wmyStruct.X + ", Y = " + wmyStruct.Y);
+        static void PrintObjects(MyClass wMyClass, MyStruct wMyStruct) {
+            Console.WriteLine("MyClass: X = " + wMyClass.X + ", Y = " + wMyClass.Y);
+            Console.WriteLine("MyStruct: X = " + wMyStruct.X + ", Y = " + wMyStruct.Y);
         }
-
-
-
     }
 }
-
-
