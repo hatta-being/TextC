@@ -14,9 +14,9 @@ namespace Practice1_3_4 {
         /// 年齢
         /// </summary>
         public int GetAge() {
-            DateTime today = DateTime.Today;
-            int wage = today.Year - Birthday.Year;
-            if (today < Birthday.AddYears(wage)) wage--;
+            DateTime wToday = DateTime.Today;
+            int wage = wToday.Year - Birthday.Year;
+            if (wToday < Birthday.AddYears(wage)) wage--;
             return wage;
         }
     }

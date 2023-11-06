@@ -15,9 +15,9 @@ namespace Practice1_1_1 {
         public int Price { get; set; }
 
         //コンストラクタ
-        public Product(int vCode, string wName, int vPrice) {
+        public Product(int vCode, string vName, int vPrice) {
             this.Code = vCode;
-            this.Name = wName;
+            this.Name = vName;
             this.Price = vPrice;
         }
 
