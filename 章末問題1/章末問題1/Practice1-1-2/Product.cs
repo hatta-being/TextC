@@ -15,10 +15,10 @@ namespace Practice1_1_2 {
         public int Price { get; set; }
 
         //コンストラクタ
-        public Product(int Code, string Name, int Price) {
-            this.Code = Code;
-            this.Name = Name;
-            this.Price = Price;
+        public Product(int vCode, string wName, int vPrice) {
+            this.Code = vCode;
+            this.Name = wName;
+            this.Price = vPrice;
         }
 
         //消費税を決める。なおかつ少数になった場合は切り捨てる（消費税率は8％）

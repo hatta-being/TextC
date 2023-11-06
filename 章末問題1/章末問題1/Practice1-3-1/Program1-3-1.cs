@@ -20,11 +20,11 @@ namespace Practice1_3_1 {
             Student wStudent = new Student {
                 Name = "山田太郎",
                 Birthday = new DateTime(2013, 4, 5),
-                ShoolName = "神戸小学校",
+                SchoolName = "神戸小学校",
                 Grade = 3,
                 ClassNumber = 3,
             };
-            Console.WriteLine($"{wStudent.Name}({wStudent.GetAge()})は、{wStudent.ShoolName}の{wStudent.Grade}年{wStudent.ClassNumber}組に所属しています。");
+            Console.WriteLine($"{wStudent.Name}({wStudent.GetAge()})は、{wStudent.SchoolName}の{wStudent.Grade}年{wStudent.ClassNumber}組に所属しています。");
         }
     }
 }

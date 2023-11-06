@@ -3,7 +3,7 @@
         /// <summary>
         /// 学校名
         /// </summary>
-        public string ShoolName { get; set; }
+        public string SchoolName { get; set; }
         /// <summary>
         /// 学年
         /// </summary>

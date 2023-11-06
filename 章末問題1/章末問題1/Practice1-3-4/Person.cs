@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Practice1_3_4 {
-    public class Person : object {
+    public class Person {
         /// <summary>
         /// 名前
         /// </summary>
