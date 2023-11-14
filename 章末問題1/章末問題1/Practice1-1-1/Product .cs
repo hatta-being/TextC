@@ -23,8 +23,8 @@ namespace Practice1_1_1 {
 
         //消費税を決める。なおかつ少数になった場合は切り捨てる（消費税率は8％）
         public int GetTax() {
-            double taxAmount = Price * 0.08;
-            return (int)Math.Floor(taxAmount);
+            double wTaxAmount = Price * 0.08;
+            return (int)Math.Floor(wTaxAmount);
         }
     }
 }
