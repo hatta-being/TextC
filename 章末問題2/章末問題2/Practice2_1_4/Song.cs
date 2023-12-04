@@ -1,5 +1,5 @@
 ﻿namespace Practice2_1_4 {
-    class Song_Class {
+    class Song {
         /// <summary>
         /// 歌のタイトル
         /// </summary>
@@ -14,7 +14,7 @@
         public int Length { get; set; }
 
         //コンストラクタ
-        public Song_Class(string vTitle, string vArtistName, int vLength) {
+        public Song(string vTitle, string vArtistName, int vLength) {
             this.Title = vTitle;
             this.ArtistName = vArtistName;
             this.Length = vLength;

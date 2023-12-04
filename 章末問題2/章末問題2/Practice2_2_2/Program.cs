@@ -13,16 +13,16 @@ namespace Practice2_2_2 {
         }
         //インチからメートルへの対応表出力
         static void PrintInchToMeterList(int vStart, int vStop) {
-            for (int wInch = vStart; wInch <= vStop; wInch++) {
-                double wMeter = InchConverter.ToMeter(wInch);
-                Console.WriteLine("{0})in = {1:0.0000}m", wInch, wMeter);
+            for (int i = vStart; i <= vStop; i++) {
+                double wMeter = InchConverter.ToMeter(i);
+                Console.WriteLine("{0})in = {1:0.0000}m", i, wMeter);
             }
         }
         //メートルからインチへの対応表出力
         static void PrintMeterToInchList(int vStart, int vStop) {
-            for (int wMeter = vStart; wMeter <= vStop; wMeter++) {
-                double wInch = InchConverter.ToMeter(wMeter);
-                Console.WriteLine("{0}in = {1:0.0000}m", wMeter, wInch);
+            for (int i = vStart; i <= vStop; i++) {
+                double wInch = InchConverter.FromMeter(i);
+                Console.WriteLine("{0}in = {1:0.0000}m", i, wInch);
             }
         }
     }

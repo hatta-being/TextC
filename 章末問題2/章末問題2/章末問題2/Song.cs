@@ -1,5 +1,5 @@
 ﻿namespace Practice2_1_1 {
-    public class Song_Class {
+    public class Song {
         /*
         問題2.1
         1.以下のプロパティを持つ、Songクラスを定義してください。
@@ -22,7 +22,7 @@
 
         //問題2.1
         //2.このとき、3つの引数を持つコンストラクタも定義してください。
-        public Song_Class(string vTitle, string vArtistName, int vLength) {
+        public Song(string vTitle, string vArtistName, int vLength) {
             this.Title = vTitle;
             this.ArtistName = vArtistName;
             this.Length = vLength;

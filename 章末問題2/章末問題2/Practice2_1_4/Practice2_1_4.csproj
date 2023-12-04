@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Practice2_1_4 .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Song_Class.cs" />
+    <Compile Include="Song.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
