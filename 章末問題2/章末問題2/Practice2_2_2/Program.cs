@@ -22,7 +22,7 @@ namespace Practice2_2_2 {
         static void PrintMeterToInchList(int vStart, int vStop) {
             for (int i = vStart; i <= vStop; i++) {
                 double wInch = InchConverter.FromMeter(i);
-                Console.WriteLine("{0}in = {1:0.0000}m", i, wInch);
+                Console.WriteLine("{0}m = {1:0.0000}in", i, wInch);
             }
         }
     }

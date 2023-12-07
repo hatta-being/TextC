@@ -8,21 +8,15 @@ namespace Practice2_1_4 {
          ただし、演奏時間は必ず60分未満と仮定してかまいません。
          */
         static void Main(string[] args) {
-            //Songクラスのインスタンス
-            Song wSong1 = new Song("唱", "Ado", 189);
-            Song wSong2 = new Song("アイドル", "YOASOBI", 213);
-            Song wSong3 = new Song("Perfect Night", "LE SSERAFIM", 183);
-
-            int wMinutes1 = wSong1.Length / 60;
-            int wRemainder1 = wSong1.Length % 60;
-            int wMinutes2 = wSong2.Length / 60;
-            int wRemainder2 = wSong2.Length % 60;
-            int wMinutes3 = wSong3.Length / 60;
-            int wRemainder3 = wSong3.Length % 60;
-
-            Console.WriteLine($"タイトル: {wSong1.Title}　アーティスト名: {wSong1.ArtistName}　演奏時間: {wMinutes1}:{wRemainder1:D2}");
-            Console.WriteLine($"タイトル: {wSong2.Title}　アーティスト名: {wSong2.ArtistName}　演奏時間: {wMinutes2}:{wRemainder2}");
-            Console.WriteLine($"タイトル: {wSong3.Title}　アーティスト名: {wSong3.ArtistName}　演奏時間: {wMinutes3}:{wRemainder3:D2}");
+            Music("唱", "Ado", 189);
+            Music("アイドル", "YOASOBI", 213);
+            Music("Perfect Night", "LE SSERAFIM", 183);
+        }
+        static void Music(string vTitle, string vArtistName, int vMinutes) {
+            Song wSong = new Song(vTitle, vArtistName, vMinutes);
+            int wMinutes = wSong.Length / 60;
+            int wRemainder = wSong.Length % 60;
+            Console.WriteLine($"タイトル: {wSong.Title}　アーティスト名: {wSong.ArtistName}　演奏時間: {wMinutes}:{wRemainder:D2}");
         }
     }
 }
