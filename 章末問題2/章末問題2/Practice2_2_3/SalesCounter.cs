@@ -14,7 +14,7 @@ namespace Practice2_2_3 {
         private static IEnumerable<Sale> ReadSales(string vFilePath) {
             var wSales = new List<Sale>();
             string[] wLines = File.ReadAllLines(vFilePath);
-            foreach (var wLine in wLines) {
+            foreach (string wLine in wLines) {
                 string[] wItems = wLine.Split(',');
                 Sale wSale = new Sale {
                     ShopName = wItems[0],

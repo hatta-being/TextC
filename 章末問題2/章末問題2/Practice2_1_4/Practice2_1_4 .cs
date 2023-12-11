@@ -8,15 +8,22 @@ namespace Practice2_1_4 {
          ただし、演奏時間は必ず60分未満と仮定してかまいません。
          */
         static void Main(string[] args) {
-            Music("唱", "Ado", 189);
-            Music("アイドル", "YOASOBI", 213);
-            Music("Perfect Night", "LE SSERAFIM", 183);
+            var wSong1 = new Song("唱", "Ado", 189);
+            var wSong2 = new Song("アイドル", "YOASOBI", 213);
+            var wSong3 = new Song("Perfect Night", "LE SSERAFIM", 183);
+            var wSongs = new Song[] { wSong1, wSong2, wSong3 };
+            foreach (var wSong in wSongs) {
+                DisplaySong(wSong);
+            }
         }
-        static void Music(string vTitle, string vArtistName, int vMinutes) {
-            Song wSong = new Song(vTitle, vArtistName, vMinutes);
-            int wMinutes = wSong.Length / 60;
-            int wRemainder = wSong.Length % 60;
-            Console.WriteLine($"タイトル: {wSong.Title}　アーティスト名: {wSong.ArtistName}　演奏時間: {wMinutes}:{wRemainder:D2}");
+        /// <summary>
+        /// 歌の情報を表示する
+        /// </summary>
+        /// <param name="vSong">歌</param>
+        static void DisplaySong(Song vSong) {
+            int wMinutes = vSong.Length / 60;
+            int wRemainder = vSong.Length % 60;
+            Console.WriteLine($"タイトル: {vSong.Title}　アーティスト名: {vSong.ArtistName}　演奏時間: {wMinutes}:{wRemainder:D2}");
         }
     }
 }

@@ -12,7 +12,9 @@ namespace Practice2_1_1 {
             Song[] wSongs = new Song[] { wSong1, wSong2, wSong3 };
 
             foreach (var wSong in wSongs) {
-                Console.WriteLine($"タイトル: {wSong.Title}　アーティスト名: {wSong.ArtistName}　演奏時間: {wSong.Length}");
+                int wMinutes = wSong.Length / 60;
+                int wRemainder = wSong.Length % 60;
+                Console.WriteLine($"タイトル: {wSong.Title}　アーティスト名: {wSong.ArtistName}　演奏時間: {wMinutes}:{wRemainder:D2}");
             }
         }
     }

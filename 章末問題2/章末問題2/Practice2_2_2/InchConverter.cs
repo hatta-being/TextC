@@ -4,7 +4,7 @@
         /// <summary>
         /// メートルからインチを求める
         /// </summary>
-        /// <param name="vMeter"></param>
+        /// <param name="vMeter">メートル</param>
         /// <returns>Inch</returns>
         public static double FromMeter(double vMeter) {
             return vMeter / 0.0254;
@@ -12,7 +12,7 @@
         /// <summary>
         /// インチからメートルを求める
         /// </summary>
-        /// <param name="vInch"></param>
+        /// <param name="vInch">インチ</param>
         /// <returns>Meter</returns>
         public static double ToMeter(double vInch) {
             return vInch * 0.0254;
