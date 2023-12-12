@@ -29,7 +29,7 @@ namespace Practice2_2_3 {
         //商品別売り上げを求める
         public IDictionary<string, int> GetPerCategorySales() {
             var wDict = new Dictionary<string, int>();
-            foreach (var wSale in FSales) {
+            foreach (Sale wSale in FSales) {
                 if (wDict.ContainsKey(wSale.ProductCategory))
                     wDict[wSale.ProductCategory] += wSale.Amount;
                 else
