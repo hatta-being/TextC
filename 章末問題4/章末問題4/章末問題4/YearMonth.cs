@@ -34,11 +34,11 @@
         このとき、自分自身のプロパティは変更せずに、新たなYearMonthオブジェクトを生成しその値を返してください。
         12月のときの処理に注意してください。*/
         public YearMonth AddOneMonth(int vYearMonthArray) {
-            int wNewYear = Year;
-            int wNewMonth = Month + 1;
+            int wNewYear = this.Year;
+            int wNewMonth = this.Month + 1;
             if (wNewMonth > 12) {
                 wNewMonth = 1;
-                wNewYear++;
+                //wNewYear++;
             }
             return new YearMonth(wNewYear, wNewMonth);
         }
