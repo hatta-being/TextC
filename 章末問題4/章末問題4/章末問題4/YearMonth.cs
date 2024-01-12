@@ -21,7 +21,7 @@
         /// </summary>
         public bool Is21Century {
             get {
-                return Year >= 2001 && Year <= 2100;
+                return this.Year >= 2001 && this.Year <= 2100;
             }
         }
         //コンストラクタ
@@ -33,19 +33,18 @@
         /*3.YearMonthクラスに、1ヵ月後を求めるAddOneMonthメソッドを追加してください。
         このとき、自分自身のプロパティは変更せずに、新たなYearMonthオブジェクトを生成しその値を返してください。
         12月のときの処理に注意してください。*/
-        public YearMonth AddOneMonth(int vYearMonthArray) {
+        public YearMonth AddOneMonth() {
             int wNewYear = this.Year;
             int wNewMonth = this.Month + 1;
             if (wNewMonth > 12) {
                 wNewMonth = 1;
-                //wNewYear++;
             }
             return new YearMonth(wNewYear, wNewMonth);
         }
 
         //4.ToStringメソッドをオーバーライドしてください。結果は、"2017年8月"といった形式にしてください。
         public override string ToString() {
-            return $"{Year}年{Month}月";
+            return $"{this.Year}年{this.Month}月";
         }
     }
 }

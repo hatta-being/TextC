@@ -26,23 +26,23 @@ namespace 章末問題4 {
             /*5.配列に格納されているすべてのYearMonthの1ヵ月後を求め、その結果を新たな配列に入れてください。
             その後、その配列の要素の内容(年月)を順に表示してください。LINQを使えるところはLINQを使って実装してみてください。*/
             // LINQを使用して1ヶ月後のYearMonthを計算し、新しい配列に格納
-            YearMonth[] wNextMonthArray = w21stCenturyData.Select(x => x.AddOneMonth(1)).ToArray();
+            YearMonth[] wNextYearMonths = w21stCenturyData.Select(x => x.AddOneMonth()).ToArray();
 
             // LINQを使用して年月を順に並び変え
-            YearMonth[] wSortedArray = wNextMonthArray.OrderBy(x => x.Year).ThenBy(x => x.Month).ToArray();
+            YearMonth[] wSortedYearMonths = wNextYearMonths.OrderBy(x => x.Year).ThenBy(x => x.Month).ToArray();
 
             // 結果を順に表示
             Console.WriteLine();
             Console.WriteLine("1ヶ月後かつ年月順の結果:");
-            foreach (var wNextMonthAndSortedResults in wSortedArray) {
-                Console.WriteLine(wNextMonthAndSortedResults);
+            foreach (var wYearMonth in wSortedYearMonths) {
+                Console.WriteLine(wYearMonth);
             }
         }
 
         /*3.配列の中の最初に見つけた21世紀のYearMonthオブジェクトを返すメソッドを書いてください。
         見つからなかった場合は、nullを返してください。foreach文を使って実装してください。*/
-        static YearMonth GetFirst21(YearMonth[] vYearMonthArray) {
-            foreach (YearMonth wYearMonth in vYearMonthArray) {
+        static YearMonth GetFirst21(YearMonth[] vYearMonths) {
+            foreach (var wYearMonth in vYearMonths) {
                 if (wYearMonth.Is21Century) {
                     return wYearMonth;
                 }
